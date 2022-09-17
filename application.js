@@ -1,35 +1,43 @@
-const botones = document.querySelectorAll(".boton");
+const boton1 = document.getElementById("boton1");
+const fontendCaja = document.getElementById("frontend-info");
+const frontend = document.querySelector(".frontend");
 
-const fontendCaja = document.querySelector(".frontend-info");
-const backendCaja = document.querySelector(".frontend-info");
-const uiuxCaja = document.querySelector(".frontend-info");
 
-console.log(botones);
-console.log(botones[1]);
-
-botones.addEventListener("click", () => {
+boton1.addEventListener("click", () => {
+  frontend.classList.toggle("size");
   fontendCaja.classList.toggle("hidden");
-   if (botones.textContent == "Show less"){
-    (botones.textContent = "Show more")
+   if (boton1.textContent == "Show less"){
+    (boton1.textContent = "Show more")
    } else {
-    (botones.textContent = "Show less")
+    (boton1.textContent = "Show less")
    }
 });
 
-botones[1].addEventListener("click", () => {
+const boton2 = document.getElementById("boton2");
+const backendCaja = document.getElementById("backend-info");
+const backend = document.querySelector(".backend");
+
+
+boton2.addEventListener("click", () => {
+  backend.classList.toggle("size");
   backendCaja.classList.toggle("hidden");
-   if (botones.textContent == "Show less"){
-    (botones.textContent = "Show more")
+   if (boton2.textContent == "Show less"){
+    (boton2.textContent = "Show more")
    } else {
-    (botones.textContent = "Show less")
+    (boton2.textContent = "Show less")
    }
 });
 
-botones.addEventListener("click", () => {
+const boton3 = document.getElementById("boton3");
+const uiuxCaja = document.getElementById("uiux-info");
+const uiux = document.querySelector(".uiux");
+
+boton3.addEventListener("click", () => {
+  uiux.classList.toggle("size");
   uiuxCaja.classList.toggle("hidden");
-   if (botones.textContent == "Show less"){
-    (botones.textContent = "Show more")
+   if (boton3.textContent == "Show less"){
+    (boton3.textContent = "Show more")
    } else {
-    (botones.textContent = "Show less")
+    (boton3.textContent = "Show less")
    }
 });
