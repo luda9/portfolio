@@ -149,6 +149,88 @@
     </div>
   </div>
 
+  <div class="projects">
+    <div class="projects-title">
+      <h3>Portfolio</h3>
+    </div>
+    <div class="projects-container">
+      <a class="project" id="rapidoaprendo" href="http://rapidoaprendo.me/" target="__blank">
+        <h3>Rápido aprendo</h3>
+        <p>
+          Platform with Frontend and Backend technology,
+          that helps kids without a correct pronunciation
+          of the letter “r” in the Spanish language in a
+          free subscription. The platform has multiple tasks
+          and videos that will make the kid have correct pronunciation.
+        </p>
+        <div class="project-img">
+          <img src="img/raaprendo.png" alt="">
+        </div>
+      </a>
+
+      <a class="project" id="rentaride" href="https://get-a-ride1.herokuapp.com/" target="__blank">
+        <h3>Rent a Ride</h3>
+        <p>
+          FullStack platform that allows users to rent a car and promote
+          their vehicles. You can make an account, upload images, post
+          offers and delete them if you are the owner.
+        </p>
+        <div class="project-img">
+          <img src="img/rentaride.png" alt="">
+        </div>
+      </a>
+
+      <a class="project" href="https://get-a-ride1.herokuapp.com/" target="__blank">
+        <h3>Cinema</h3>
+        <p>
+          FullStack platform that allows users to rent a car and promote
+          their vehicles. You can make an account, upload images, post
+          offers and delete them if you are the owner.
+        </p>
+        <div class="project-img">
+          <img src="img/rentaride.png" alt="">
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="contact-section">
+    <form onsubmit="event.preventDefault(); validateForm()">
+      <div class="contact-title">
+        <h3>Contact me</h3>
+      </div>
+      <div class="contanct-nameandmail">
+
+        <div class="name">
+          <label for="name" id="label-name">Name</label>
+          <div class="name-input">
+            <input type="text" id="name" placeholder="Your name" class="campo-informacion">
+
+          </div>
+        </div>
+
+        <div class="email">
+          <label for="email" id="label-email">Email</label>
+          <div class="email-input">
+            <input type="text" id="email" placeholder="Your email" class="campo-informacion">
+
+          </div>
+        </div>
+
+      </div>
+      <div class="contact-message">
+        <label for="message" id="label-message">Message</label>
+        <div class="message-input">
+          <textarea id="message" rows="6" class="campo-informacion"></textarea>
+        </div>
+      </div>
+      <div class="contact-button">
+        <input type="submit" value="Send message">
+        <span>Successful</span>
+      </div>
+    </form>
+  </div>
+
   <script src="application.js"></script>
 </body>
 </html>

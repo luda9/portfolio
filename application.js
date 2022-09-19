@@ -41,3 +41,27 @@ boton3.addEventListener("click", () => {
     (boton3.textContent = "Show less")
    }
 });
+
+// Inputs
+
+// Get data
+const name = document.getElementById("name")
+const email = document.getElementById("email")
+const message = document.getElementById("message")
+const success = document.getElementById("name")
+const error = document.querySelectorAll("error")
+
+// Validate data
+function validateForm() {
+  clearMessages();
+
+  if(name.value.length < 1){
+    error[0].innerText = "Name cannot be blank";
+    name.classList.add("error-border");
+  }
+
+  if(!emailIsValid(email.value)){
+    error[1].innerText = "Invalid email adress";
+    email.classList.add("error-border");
+  }
+}
