@@ -14,7 +14,7 @@ $black-color: #2C2A2A;
   }
 }
 
-button{
+button, input[type="submit"]{
   margin: 10px 0;
   padding: 10px 20px;
   background-color: $black-color;
@@ -25,6 +25,45 @@ button{
   border: 0;
   font-size: 17px;
   cursor: pointer;
+}
+
+.hidden{
+  display: none;
+  transition: all ease 0.5s;
+}
+
+.size{
+  height: auto!important;
+}
+
+.error{
+  color: red;
+}
+
+.error-border{
+  border-bottom: 1px solid red;
+}
+
+.succes{
+  color: #C894F5;
+}
+
+.campo-informacion{
+  width: 100%;
+  height: 50px;
+  outline: none;
+  font-size: 17px;
+  border: 1px solid $black-color;
+  border-radius: 10px;
+  padding: 0 20px;
+  margin: 10px;
+  margin-left: 0;
+  &::placeholder{
+    color: #ccc;
+  }
+  &:focus{
+    border: 2px solid $black-color;
+  }
 }
 
 body{
@@ -213,7 +252,7 @@ main{
 }
 
 .experience-section{
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -266,11 +305,132 @@ main{
   }
 }
 
-.hidden{
-  display: none;
-  transition: all ease 0.5s;
+.projects{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .projects-title{
+    width: 80vw;
+    h3{
+      font-size: 23px;
+      font-weight: bolder;
+      margin: 20px 0;
+    }
+  }
+  .projects-container{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    flex-wrap: wrap;
+    padding: 20px;
+    #rapidoaprendo{
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+    }
+    #rentaride{
+      grid-column: 2 / 3;
+    }
+    .project{
+      min-width: 40%;
+      height: auto;
+      display: block;
+      text-decoration: none;
+      background-color: $black_color;
+      padding: 30px;
+      margin: 20px;
+      border-radius: 20px;
+      h3{
+        color: #fbfbf8;
+        margin: 10px 0;
+      }
+      p{
+        color: #fbfbf8;
+        width: 90%;
+        font-weight: lighter;
+      }
+      .project-img{
+        min-width: 100%;
+        height: auto;
+        img{
+          max-width: 100%;
+          min-height: 100%;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
 }
 
-.size{
-  height: auto!important;
+.contact-section{
+  width: 60vw;
+  margin: 0 auto;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-title{
+    h3{
+      font-size: 23px;
+      font-weight: bolder;
+      margin: 20px 0;
+      text-align: center;
+    }
+  }
+  .contanct-nameandmail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    margin: 0;
+    .name{
+      width: 50%;
+      font-size: 20px;
+      margin-right: 10px;
+      .name-input{
+        max-width: 90%;
+        margin: 10px;
+        margin-left: 0;
+      }
+    }
+    .email{
+      width: 50%;
+      font-size: 20px;
+      margin-left: 10px;
+      .email-input{
+        max-width: 90%;
+        margin: 10px;
+        margin-left: 0px;
+      }
+    }
+  }
+  .contact-message{
+    max-width: 100%;
+    font-size: 20px;
+    .message-input{
+      textarea{
+        width: 97.5%;
+        height: 100px;
+        padding: 10px;
+        font-size: 17px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+        margin: 10px 0;
+        resize: none;
+      }
+    }
+  }
+  .contact-button{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
 }
