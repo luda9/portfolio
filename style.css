@@ -1047,6 +1047,12 @@ input, textarea {
   .aboutme-section .aboutme-box {
     height: 85%;
   }
+  .aboutme-section .aboutme-box .aboutme-experience .experience-cards {
+    width: 100%;
+  }
+  .aboutme-section .aboutme-box .aboutme-experience .experience-cards .experience .months {
+    font-size: 15px;
+  }
   main {
     height: 85vh;
     padding: 10px;

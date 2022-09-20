@@ -819,6 +819,16 @@ input, textarea{
     height: 950px;
     .aboutme-box{
       height: 85%;
+      .aboutme-experience{
+        .experience-cards{
+          width: 100%;
+          .experience{
+            .months{
+              font-size: 15px;
+            }
+          }
+        }
+      }
     }
   }
    main{
