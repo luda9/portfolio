@@ -187,7 +187,7 @@
   </div>
 
   <div class="contact-section" id="contact">
-    <form onsubmit="">
+    <form action="#">
       <div class="contact-title">
         <h3>Contact me</h3>
       </div>
@@ -196,16 +196,14 @@
         <div class="name">
           <label for="name" id="label-name">Name</label>
           <div class="name-input">
-            <input type="text" id="name" placeholder="Your name" class="campo-informacion">
-
+            <input type="text" id="name" placeholder="Your name" class="campo-informacion" name="nameipt">
           </div>
         </div>
 
         <div class="email">
           <label for="email" id="label-email">Email</label>
           <div class="email-input">
-            <input type="text" id="email" placeholder="Your email" class="campo-informacion">
-
+            <input type="text" id="email" placeholder="Your email" class="campo-informacion" name="emailipt">
           </div>
         </div>
 
@@ -213,11 +211,12 @@
       <div class="contact-message">
         <label for="message" id="label-message">Message</label>
         <div class="message-input">
-          <textarea id="message" rows="6" class="campo-informacion" placeholder="Your message"></textarea>
+          <textarea id="message" rows="6" class="campo-informacion" placeholder="Your message" name="messageipt"></textarea>
         </div>
       </div>
       <div class="contact-button button">
         <input type="submit" value="Send message">
+        <span></span>
       </div>
     </form>
   </div>

@@ -630,6 +630,10 @@ main .text {
   padding: 15px 20px;
 }
 
+.contact-section .contact-button span {
+  display: none;
+}
+
 footer {
   background-color: #2C2A2A;
   height: 250px;
