@@ -992,8 +992,13 @@ input, textarea {
 
 @media (max-width: 414px) {
   main {
+    height: 85vh;
     padding: 10px;
     margin: 0;
+  }
+  main .luda {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   main .text {
     width: 80%;
@@ -1017,6 +1022,63 @@ input, textarea {
             flex-direction: column;
   }
   .experience-section .experience-box .row .primary-info h3 {
+    width: auto;
+    text-align: center;
+  }
+  .contact-section {
+    width: 80vw;
+    padding: 0;
+  }
+  .contact-section form {
+    min-width: 100%;
+  }
+  .contact-section form input {
+    width: 90%;
+  }
+  .contact-section form .contact-message .message-input textarea {
+    width: 93%;
+  }
+  .contact-section form .contact-button {
+    margin-bottom: 10px;
+  }
+  .aboutme-section {
+    height: 950px;
+  }
+  .aboutme-section .aboutme-box {
+    height: 85%;
+  }
+  main {
+    height: 85vh;
+    padding: 10px;
+    margin: 0;
+  }
+  main .luda {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  main .text {
+    width: 80%;
+    margin: 20px 0;
+  }
+  main .icons {
+    right: 17%;
+    top: 85%;
+  }
+  .experience-section {
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .experience-section .experience-box .row {
+    height: 160px;
+  }
+  .experience-section .experience-box .row .primary-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .experience-section .experience-box .row .primary-info h3 {
+    width: auto;
     text-align: center;
   }
   .contact-section {

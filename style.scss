@@ -764,8 +764,12 @@ input, textarea{
 
 @media (max-width: 414px){
   main{
+    height: 85vh;
     padding: 10px;
     margin: 0;
+    .luda{
+      transform: scale(0.9);
+    }
     .text{
       width: 80%;
       margin: 20px 0;
@@ -784,6 +788,65 @@ input, textarea{
         .primary-info{
           flex-direction: column;
           h3{
+            width: auto;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .contact-section{
+    width: 80vw;
+    padding: 0;
+    form{
+      min-width: 100%;
+      input{
+        width: 90%;
+      }
+      .contact-message{
+        .message-input{
+          textarea{
+            width: 93%;
+          }
+        }
+      }
+      .contact-button{
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .aboutme-section{
+    height: 950px;
+    .aboutme-box{
+      height: 85%;
+    }
+  }
+   main{
+    height: 85vh;
+    padding: 10px;
+    margin: 0;
+    .luda{
+      transform: scale(0.9);
+    }
+    .text{
+      width: 80%;
+      margin: 20px 0;
+    }
+    .icons{
+      right: 17%;
+      top: 85%;
+      }
+  }
+  .experience-section{
+    height: auto;
+    margin-bottom: 50px;
+    .experience-box{
+      .row{
+        height: 160px;
+        .primary-info{
+          flex-direction: column;
+          h3{
+            width: auto;
             text-align: center;
           }
         }
