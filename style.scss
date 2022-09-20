@@ -27,6 +27,10 @@ button, input[type="submit"]{
   cursor: pointer;
 }
 
+.menu-visible{
+  left: 0!important;
+}
+
 .hidden{
   display: none;
   transition: all ease 0.5s;
@@ -66,6 +70,10 @@ button, input[type="submit"]{
   }
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   width: 100vw;
   padding: 0;
@@ -87,6 +95,12 @@ header{
   display: flex;
   align-items: center;
   z-index: 10;
+  transition: 2s;
+  .header-button{
+    #menu{
+      display: none;
+    }
+  }
   .navbar{
     width: 100vw;
     height: auto;
@@ -350,6 +364,7 @@ main{
         color: #fbfbf8;
         width: 90%;
         font-weight: lighter;
+        line-height: 25px;
       }
       .project-img{
         min-width: 100%;
@@ -432,5 +447,406 @@ main{
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
+  }
+}
+
+footer{
+  background-color: $black-color;
+  height: 250px;
+  .footer-container{
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .footer-title{
+      h3{
+        font-size: 25px;
+        color: #fbfbf8;
+        font-weight: bolder;
+      }
+    }
+    .footer-navbar{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+      a{
+        color: #fbfbf8;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 18px;
+      }
+    }
+    .footer-social{
+      width: 100%;
+      .footer-social-box{
+        margin: 0 auto;
+        width: 30%;
+        background-color: #fbfbf8;
+        padding: 8px 10px;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 15px;
+        a{
+          color: $black-color;
+          font-size: 25px;
+        }
+      }
+    }
+    .footer-copy{
+      font-size: 15px;
+      color: #ccc;
+    }
+  }
+}
+
+input, textarea{
+  background-color: #fbfbf8 ;
+}
+
+// QUERYS
+
+@media (max-width: 1130px){
+  .aboutme-section{
+    #figura1{
+      transform: scale(0.3);
+    }
+    #figura2{
+      transform: scale(0.8);
+    }
+  }
+}
+
+@media (max-width: 1000px){
+  main{
+    padding: 100px;
+  }
+  .aboutme-section{
+    #figura1{
+      transform: scale(0.3);
+      bottom: -400px;
+    }
+    #figura2{
+      transform: scale(0.8);
+    }
+    .aboutme-box{
+      height: 60%;
+    }
+  }
+}
+
+@media (max-width: 890px){
+  main{
+    padding: 50px;
+  }
+  .projects{
+    .projects-container{
+      width: 80vw;
+      display: flex;
+    }
+  }
+  .contact-section{
+    .contanct-nameandmail{
+      display: flex;
+      flex-direction: column;
+      .name{
+        width: 100%;
+        font-size: 20px;
+        margin-right: 0;
+        .name-input{
+          max-width: 100%;
+        }
+      }
+      .email{
+        width: 100%;
+        margin-left: 0;
+        .email-input{
+          max-width: 100%;
+        }
+      }
+    }
+    .contact-message{
+      .message-input{
+        textarea{
+          width: 102%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 541px){
+  header{
+    position: fixed;
+    .header-button{
+      display: block;
+      color: black;
+      width: 100%;
+      display: flex;
+      justify-content: end;
+      padding: 20px 20px;
+      z-index: 3;
+      #menu{
+        display: block;
+        font-size: 30px;
+        background-color: transparent;
+        color: $black-color;
+      }
+    }
+    .navbar{
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      flex-direction: column;
+      justify-content: start;
+      padding: 50px;
+      padding-top: 130px;
+      background-color: #fbfbf8;
+      top: -80px;
+      align-items: flex-start;
+      margin: 80px 0;
+      z-index: 2;
+      left: 100%;
+      transition: all 0.5s;
+      .navbar-logo{
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+        width: 75%;
+        a{
+          font-size: 30px;
+        }
+      }
+      .navbar-ul{
+        width: 100%;
+        ul{
+          padding: 0;
+          margin: 0;
+          flex-direction: column;
+          li{
+            padding: 15px;
+            border-bottom: 1px solid #ccc;
+            width: 75%;
+            a{
+              padding: 0;
+              margin: 0;
+              font-size: 30px;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  main{
+    height: 100vh;
+    margin-top: 0;
+    padding: 0 20px;
+    max-width: 100vw;
+    .luda{
+      width: 100%;
+      transform: scale(0.7);
+      .letters{
+        width: 100%;
+        .words{
+          height: auto;
+          width: 1000px;
+          margin-left: -20px;
+        }
+      }
+    }
+    .subtitle{
+      padding: 0 30px;
+      height: auto;
+      h3{
+        font-size: 23px;
+        font-weight: bolder;
+        margin-bottom: 0;
+      }
+    }
+    .text{
+      padding: 0 30px;
+      margin: 0 auto;
+      width: 90%;
+    }
+    .button{
+      margin-left: 30px;
+    }
+    .icons{
+      height: auto;
+      width: 30vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      position: absolute;
+      right: 30%;
+      top: 85%;
+      font-size: 40px;
+      padding-top: 0;
+      margin-top: 30px;
+      }
+    }
+
+  .aboutme-section{
+    height: 900px;
+    margin: 100px 0;
+    #figura1{
+      transform: scale(0.5);
+      bottom: 230px;
+      right: -347px;
+    }
+    #figura2{
+      transform: scale(0.6);
+      bottom: 10%;
+      left: 0;
+    }
+    .aboutme-box{
+      height: 85%;
+      width: 60%;
+      .aboutme-experience{
+        flex-direction: column;
+        width: 100%;
+        .experience-cards{
+          min-width: 90%;
+          padding: 0;
+          margin: 0;
+        }
+      }
+      .button-experience{
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+      }
+    }
+  }
+  .projects{
+    .projects-container{
+      width: 90%;
+    }
+  }
+  .contact-section{
+    padding: 30px 0;
+    .contact-button{
+      flex-direction: column-reverse;
+      margin-bottom: 50px;
+    }
+  }
+  footer{
+    .footer-container{
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 500px){
+  .experience-section{
+    height: auto;
+    margin-bottom: 50px;
+    .experience-box{
+      .row{
+        height: 160px;
+        .primary-info{
+          flex-direction: column;
+          h3{
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 414px){
+  main{
+    padding: 10px;
+    margin: 0;
+    .text{
+      width: 80%;
+      margin: 20px 0;
+    }
+    .icons{
+      right: 17%;
+      top: 85%;
+      }
+  }
+  .experience-section{
+    height: auto;
+    margin-bottom: 50px;
+    .experience-box{
+      .row{
+        height: 160px;
+        .primary-info{
+          flex-direction: column;
+          h3{
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .contact-section{
+    width: 80vw;
+    padding: 0;
+    form{
+      min-width: 100%;
+      input{
+        width: 90%;
+      }
+      .contact-message{
+        .message-input{
+          textarea{
+            width: 93%;
+          }
+        }
+      }
+      .contact-button{
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .aboutme-section{
+    height: 950px;
+    .aboutme-box{
+      height: 85%;
+    }
+  }
+}
+
+@media (max-width: 375px){
+  main{
+    margin-top: -50px;
+    .icons{
+      right: 23%;
+      top: 85%;
+    }
+  }
+  .aboutme-section{
+    height: 1000px;
+    margin: 100px 0;
+    .aboutme-box{
+      height: 85%;
+      width: 60%;
+    }
+  }
+  footer{
+    .footer-container{
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 360px){
+  main{
+    margin-top: -50px;
+    .icons{
+      right: 18%;
+      top: 85%;
+    }
   }
 }

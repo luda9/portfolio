@@ -25,6 +25,10 @@ button, input[type="submit"] {
   cursor: pointer;
 }
 
+.menu-visible {
+  left: 0 !important;
+}
+
 .hidden {
   display: none;
   -webkit-transition: all ease 0.5s;
@@ -79,6 +83,10 @@ button, input[type="submit"] {
   border: 2px solid #2C2A2A;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100vw;
   padding: 0;
@@ -105,6 +113,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
   z-index: 10;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+header .header-button #menu {
+  display: none;
 }
 
 header .navbar {
@@ -497,6 +511,7 @@ main .text {
   color: #fbfbf8;
   width: 90%;
   font-weight: lighter;
+  line-height: 25px;
 }
 
 .projects .projects-container .project .project-img {
@@ -609,5 +624,453 @@ main .text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer {
+  background-color: #2C2A2A;
+  height: 250px;
+}
+
+footer .footer-container {
+  width: 40%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-container .footer-title h3 {
+  font-size: 25px;
+  color: #fbfbf8;
+  font-weight: bolder;
+}
+
+footer .footer-container .footer-navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+footer .footer-container .footer-navbar a {
+  color: #fbfbf8;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+footer .footer-container .footer-social {
+  width: 100%;
+}
+
+footer .footer-container .footer-social .footer-social-box {
+  margin: 0 auto;
+  width: 30%;
+  background-color: #fbfbf8;
+  padding: 8px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 15px;
+}
+
+footer .footer-container .footer-social .footer-social-box a {
+  color: #2C2A2A;
+  font-size: 25px;
+}
+
+footer .footer-container .footer-copy {
+  font-size: 15px;
+  color: #ccc;
+}
+
+input, textarea {
+  background-color: #fbfbf8;
+}
+
+@media (max-width: 1130px) {
+  .aboutme-section #figura1 {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  .aboutme-section #figura2 {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@media (max-width: 1000px) {
+  main {
+    padding: 100px;
+  }
+  .aboutme-section #figura1 {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    bottom: -400px;
+  }
+  .aboutme-section #figura2 {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .aboutme-section .aboutme-box {
+    height: 60%;
+  }
+}
+
+@media (max-width: 890px) {
+  main {
+    padding: 50px;
+  }
+  .projects .projects-container {
+    width: 80vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-section .contanct-nameandmail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-section .contanct-nameandmail .name {
+    width: 100%;
+    font-size: 20px;
+    margin-right: 0;
+  }
+  .contact-section .contanct-nameandmail .name .name-input {
+    max-width: 100%;
+  }
+  .contact-section .contanct-nameandmail .email {
+    width: 100%;
+    margin-left: 0;
+  }
+  .contact-section .contanct-nameandmail .email .email-input {
+    max-width: 100%;
+  }
+  .contact-section .contact-message .message-input textarea {
+    width: 102%;
+  }
+}
+
+@media (max-width: 541px) {
+  header {
+    position: fixed;
+  }
+  header .header-button {
+    display: block;
+    color: black;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    padding: 20px 20px;
+    z-index: 3;
+  }
+  header .header-button #menu {
+    display: block;
+    font-size: 30px;
+    background-color: transparent;
+    color: #2C2A2A;
+  }
+  header .navbar {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding: 50px;
+    padding-top: 130px;
+    background-color: #fbfbf8;
+    top: -80px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 80px 0;
+    z-index: 2;
+    left: 100%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  header .navbar .navbar-logo {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    width: 75%;
+  }
+  header .navbar .navbar-logo a {
+    font-size: 30px;
+  }
+  header .navbar .navbar-ul {
+    width: 100%;
+  }
+  header .navbar .navbar-ul ul {
+    padding: 0;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .navbar .navbar-ul ul li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    width: 75%;
+  }
+  header .navbar .navbar-ul ul li a {
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    width: 100%;
+  }
+  main {
+    height: 100vh;
+    margin-top: 0;
+    padding: 0 20px;
+    max-width: 100vw;
+  }
+  main .luda {
+    width: 100%;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  main .luda .letters {
+    width: 100%;
+  }
+  main .luda .letters .words {
+    height: auto;
+    width: 1000px;
+    margin-left: -20px;
+  }
+  main .subtitle {
+    padding: 0 30px;
+    height: auto;
+  }
+  main .subtitle h3 {
+    font-size: 23px;
+    font-weight: bolder;
+    margin-bottom: 0;
+  }
+  main .text {
+    padding: 0 30px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  main .button {
+    margin-left: 30px;
+  }
+  main .icons {
+    height: auto;
+    width: 30vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
+    right: 30%;
+    top: 85%;
+    font-size: 40px;
+    padding-top: 0;
+    margin-top: 30px;
+  }
+  .aboutme-section {
+    height: 900px;
+    margin: 100px 0;
+  }
+  .aboutme-section #figura1 {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    bottom: 230px;
+    right: -347px;
+  }
+  .aboutme-section #figura2 {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    bottom: 10%;
+    left: 0;
+  }
+  .aboutme-section .aboutme-box {
+    height: 85%;
+    width: 60%;
+  }
+  .aboutme-section .aboutme-box .aboutme-experience {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .aboutme-section .aboutme-box .aboutme-experience .experience-cards {
+    min-width: 90%;
+    padding: 0;
+    margin: 0;
+  }
+  .aboutme-section .aboutme-box .button-experience {
+    height: 50px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px 0;
+  }
+  .projects .projects-container {
+    width: 90%;
+  }
+  .contact-section {
+    padding: 30px 0;
+  }
+  .contact-section .contact-button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 50px;
+  }
+  footer .footer-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .experience-section {
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .experience-section .experience-box .row {
+    height: 160px;
+  }
+  .experience-section .experience-box .row .primary-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .experience-section .experience-box .row .primary-info h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 414px) {
+  main {
+    padding: 10px;
+    margin: 0;
+  }
+  main .text {
+    width: 80%;
+    margin: 20px 0;
+  }
+  main .icons {
+    right: 17%;
+    top: 85%;
+  }
+  .experience-section {
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .experience-section .experience-box .row {
+    height: 160px;
+  }
+  .experience-section .experience-box .row .primary-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .experience-section .experience-box .row .primary-info h3 {
+    text-align: center;
+  }
+  .contact-section {
+    width: 80vw;
+    padding: 0;
+  }
+  .contact-section form {
+    min-width: 100%;
+  }
+  .contact-section form input {
+    width: 90%;
+  }
+  .contact-section form .contact-message .message-input textarea {
+    width: 93%;
+  }
+  .contact-section form .contact-button {
+    margin-bottom: 10px;
+  }
+  .aboutme-section {
+    height: 950px;
+  }
+  .aboutme-section .aboutme-box {
+    height: 85%;
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    margin-top: -50px;
+  }
+  main .icons {
+    right: 23%;
+    top: 85%;
+  }
+  .aboutme-section {
+    height: 1000px;
+    margin: 100px 0;
+  }
+  .aboutme-section .aboutme-box {
+    height: 85%;
+    width: 60%;
+  }
+  footer .footer-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 360px) {
+  main {
+    margin-top: -50px;
+  }
+  main .icons {
+    right: 18%;
+    top: 85%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
