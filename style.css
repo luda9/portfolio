@@ -992,13 +992,19 @@ input, textarea {
 
 @media (max-width: 414px) {
   main {
-    height: 85vh;
     padding: 10px;
     margin: 0;
+  }
+  main .title {
+    margin-bottom: 50px;
   }
   main .luda {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
+    margin-left: 8px;
+  }
+  main .subtitle {
+    text-align: center;
   }
   main .text {
     width: 80%;
@@ -1007,6 +1013,10 @@ input, textarea {
   main .icons {
     right: 17%;
     top: 85%;
+  }
+  .aboutme-section .aboutme-box {
+    width: 70%;
+    padding: 20px;
   }
   .experience-section {
     height: auto;
@@ -1108,6 +1118,9 @@ input, textarea {
   }
   .aboutme-section .aboutme-box {
     height: 85%;
+  }
+  footer .footer-container {
+    width: 100%;
   }
 }
 
