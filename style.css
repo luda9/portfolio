@@ -626,6 +626,10 @@ main .text {
           align-items: center;
 }
 
+.contact-section .contact-button input {
+  padding: 15px 20px;
+}
+
 footer {
   background-color: #2C2A2A;
   height: 250px;
@@ -1013,6 +1017,12 @@ input, textarea {
   main .icons {
     right: 17%;
     top: 85%;
+  }
+  .aboutme-section #figura1 {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    bottom: 380px;
+    right: -200px;
   }
   .aboutme-section .aboutme-box {
     width: 70%;

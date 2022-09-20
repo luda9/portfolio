@@ -447,6 +447,9 @@ main{
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
+    input{
+      padding: 15px 20px;
+    }
   }
 }
 
@@ -786,6 +789,11 @@ input, textarea{
       }
   }
   .aboutme-section{
+    #figura1{
+      transform: scale(0.6);
+      bottom: 380px;
+      right: -200px;
+    }
     .aboutme-box{
       width: 70%;
       padding: 20px;
