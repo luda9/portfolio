@@ -3,29 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>Luda</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
 </head>
 <body>
   <header>
+    <div class="header-button">
+      <button id="menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
     <div class="navbar">
       <div class="navbar-logo">
-        <a href="#">Home</a>
+        <a class="menu-item" href="#home">Home</a>
       </div>
       <div class="navbar-ul">
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact me</a></li>
+          <li><a class="menu-item" href="#about">About</a></li>
+          <li><a class="menu-item" href="#skills">Skills</a></li>
+          <li><a class="menu-item" href="#portfolio">Portfolio</a></li>
+          <li><a class="menu-item" href="#contact">Contact me</a></li>
         </ul>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="home">
     <div class="icons">
       <a href="https://www.linkedin.com/in/luda9/" target="__blank"><i class="fa-brands fa-linkedin"></i></a>
       <a href="https://www.github.com/luda9" target="__blank"><i class="fa-brands fa-github"></i></a>
@@ -43,14 +46,14 @@
       <h3>Full Stack Web Developer</h3>
     </div>
     <div class="text">
-      <p>High level in development skills and web design, producing quality work.</p>
+      <p>High level in development, skills and web design, producing quality work.</p>
     </div>
     <div class="button">
       <a href="#">Contact me</a>
     </div>
   </main>
 
-  <div class="aboutme-section">
+  <div class="aboutme-section" id="about">
     <img id="figura1" src="img/blob.svg" alt="">
     <img id="figura2" src="img/bubble2.svg" alt="">
     <div class="aboutme-box">
@@ -73,37 +76,37 @@
               <h3>10 +</h3>
             </div>
             <div class="months">
-              <p>Monts <br>experience</p>
+              <p>Months <br>experience</p>
             </div>
           </div>
           <div class="experience">
             <div class="time">
-              <h3>10 +</h3>
+              <h3>3 +</h3>
             </div>
             <div class="months">
-              <p>Monts <br>experience</p>
+              <p>Projects</p>
             </div>
           </div>
           <div class="experience">
             <div class="time">
-              <h3>10 +</h3>
+              <h3><i class="fa-solid fa-code"></i></h3>
             </div>
             <div class="months">
-              <p>Monts <br>experience</p>
+              <p>Full Stack</p>
             </div>
           </div>
         </div>
-        <div class="button">
+        <div class="button button-experience">
           <a href="#">Download CV</a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="experience-section">
+  <div class="experience-section" id="skills">
     <div class="experience-box">
       <div class="experience-title">
-        <h3>Experience</h3>
+        <h3>Skills</h3>
       </div>
 
       <div class="row frontend">
@@ -149,7 +152,7 @@
     </div>
   </div>
 
-  <div class="projects">
+  <div class="projects" id="portfolio">
     <div class="projects-title">
       <h3>Portfolio</h3>
     </div>
@@ -194,8 +197,8 @@
     </div>
   </div>
 
-  <div class="contact-section">
-    <form onsubmit="event.preventDefault(); validateForm()">
+  <div class="contact-section" id="contact">
+    <form onsubmit="">
       <div class="contact-title">
         <h3>Contact me</h3>
       </div>
@@ -221,15 +224,38 @@
       <div class="contact-message">
         <label for="message" id="label-message">Message</label>
         <div class="message-input">
-          <textarea id="message" rows="6" class="campo-informacion"></textarea>
+          <textarea id="message" rows="6" class="campo-informacion" placeholder="Your message"></textarea>
         </div>
       </div>
       <div class="contact-button">
         <input type="submit" value="Send message">
-        <span>Successful</span>
       </div>
     </form>
   </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-title">
+        <h3>LUDA</h3>
+      </div>
+      <div class="footer-navbar">
+        <a href="#">ABOUT</a>
+        <a href="#">SKILLS</a>
+        <a href="#">PORTFOLIO</a>
+        <a href="#">CONTACT</a>
+      </div>
+      <div class="footer-social">
+        <div class="footer-social-box">
+          <a href="https://www.linkedin.com/in/luda9/" target="__blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.github.com/luda9" target="__blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.twitter.com/ludadev9" target="__blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p>Copyright &copy; 2022 LUDA All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="application.js"></script>
 </body>
