@@ -764,8 +764,12 @@ input, textarea{
 
 @media (max-width: 414px){
   main{
+    height: 85vh;
     padding: 10px;
     margin: 0;
+    .luda{
+      transform: scale(0.9);
+    }
     .text{
       width: 80%;
       margin: 20px 0;
@@ -784,6 +788,7 @@ input, textarea{
         .primary-info{
           flex-direction: column;
           h3{
+            width: auto;
             text-align: center;
           }
         }
