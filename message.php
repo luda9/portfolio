@@ -1,4 +1,3 @@
-//Contact Form in PHP
 <?php
   $name = htmlspecialchars($_POST['nameipt']);
   $email = htmlspecialchars($_POST['emailipt']);
