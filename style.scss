@@ -209,7 +209,7 @@ main{
     left: 200px;
   }
   .aboutme-box{
-    height: 50%;
+    height: auto;
     width: 70%;
     padding: 50px;
     display: flex;
@@ -948,6 +948,18 @@ input, textarea{
     .icons{
       right: 18%;
       top: 85%;
+    }
+  }
+}
+
+@media (max-height: 700px){
+  .aboutme-section{
+    .aboutme-box{
+      height: auto;
+    }
+    background-color: red;
+    #figura1{
+      transform: scale(0.4);
     }
   }
 }
