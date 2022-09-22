@@ -209,7 +209,7 @@ main{
     left: 200px;
   }
   .aboutme-box{
-    height: auto;
+    min-height: auto;
     width: 70%;
     padding: 50px;
     display: flex;
@@ -538,9 +538,6 @@ input, textarea{
     #figura2{
       transform: scale(0.8);
     }
-    .aboutme-box{
-      height: 60%;
-    }
   }
 }
 
@@ -710,7 +707,6 @@ input, textarea{
       left: 0;
     }
     .aboutme-box{
-      height: 85%;
       width: 60%;
       .aboutme-experience{
         flex-direction: column;
@@ -841,7 +837,6 @@ input, textarea{
   .aboutme-section{
     height: 950px;
     .aboutme-box{
-      height: 85%;
       .aboutme-experience{
         .experience-cards{
           width: 100%;
@@ -908,9 +903,6 @@ input, textarea{
   }
   .aboutme-section{
     height: 950px;
-    .aboutme-box{
-      height: 85%;
-    }
   }
   footer{
     .footer-container{
@@ -931,7 +923,6 @@ input, textarea{
     height: 1000px;
     margin: 100px 0;
     .aboutme-box{
-      height: 85%;
       width: 60%;
     }
   }
@@ -954,12 +945,47 @@ input, textarea{
 
 @media (max-height: 700px){
   .aboutme-section{
+    #figura1{
+      transform: scale(0.3);
+    }
+  }
+}
+
+@media (max-height: 650px){
+  .aboutme-section{
+    .aboutme-box{
+      height: 70%;
+
+    }
+    #figura1{
+      transform: scale(0.2);
+    }
+  }
+}
+
+@media (max-height: 600px){
+  .aboutme-section{
+    height: 110vh;
     .aboutme-box{
       height: auto;
     }
-    background-color: red;
-    #figura1{
-      transform: scale(0.4);
+  }
+}
+
+@media (max-height: 550px){
+  .aboutme-section{
+    height: 140vh;
+    .aboutme-box{
+      height: auto;
+    }
+  }
+}
+
+@media (max-height: 480px){
+  .aboutme-section{
+    height: 160vh;
+    .aboutme-box{
+      height: auto;
     }
   }
 }
