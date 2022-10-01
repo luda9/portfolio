@@ -189,13 +189,14 @@ main{
 }
 
 .aboutme-section{
-  height: 100vh;
+  height: auto;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
+  padding: 50px 0;
   #figura1{
     position: absolute;
     transform: scale(0.4);
@@ -609,7 +610,6 @@ input, textarea{
       position: fixed;
       flex-direction: column;
       justify-content: start;
-      padding: 50px;
       padding-top: 130px;
       background-color: #fbfbf8;
       top: -80px;
@@ -621,7 +621,8 @@ input, textarea{
       .navbar-logo{
         padding: 15px;
         border-bottom: 1px solid #ccc;
-        width: 75%;
+        width: 80%;
+        margin: 0 auto;
         a{
           font-size: 30px;
         }
@@ -633,9 +634,10 @@ input, textarea{
           margin: 0;
           flex-direction: column;
           li{
+            width: 80%;
+            margin: 0 auto;
             padding: 15px;
             border-bottom: 1px solid #ccc;
-            width: 75%;
             a{
               padding: 0;
               margin: 0;
@@ -698,7 +700,6 @@ input, textarea{
     }
 
   .aboutme-section{
-    height: 900px;
     margin: 100px 0;
     #figura1{
       transform: scale(0.5);
@@ -839,7 +840,6 @@ input, textarea{
     }
   }
   .aboutme-section{
-    height: 950px;
     .aboutme-box{
       .aboutme-experience{
         .experience-cards{
@@ -905,9 +905,6 @@ input, textarea{
       }
     }
   }
-  .aboutme-section{
-    height: 950px;
-  }
   footer{
     .footer-container{
       width: 100%;
@@ -924,7 +921,6 @@ input, textarea{
     }
   }
   .aboutme-section{
-    height: 1000px;
     margin: 100px 0;
     .aboutme-box{
       width: 60%;
@@ -957,19 +953,19 @@ input, textarea{
 
 @media (max-height: 650px){
   .aboutme-section{
-    .aboutme-box{
-      height: 70%;
-
-    }
+    height: auto;
     #figura1{
       transform: scale(0.2);
     }
+    .aboutme-box{
+      height: auto;
+    }
   }
+
 }
 
 @media (max-height: 600px){
   .aboutme-section{
-    height: 110vh;
     .aboutme-box{
       height: auto;
     }
@@ -978,7 +974,6 @@ input, textarea{
 
 @media (max-height: 550px){
   .aboutme-section{
-    height: 140vh;
     .aboutme-box{
       height: auto;
     }
@@ -987,7 +982,6 @@ input, textarea{
 
 @media (max-height: 480px){
   .aboutme-section{
-    height: 160vh;
     .aboutme-box{
       height: auto;
     }

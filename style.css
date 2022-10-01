@@ -237,7 +237,7 @@ main .text {
 }
 
 .aboutme-section {
-  height: 100vh;
+  height: auto;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,6 +250,7 @@ main .text {
           align-items: center;
   position: relative;
   overflow: hidden;
+  padding: 50px 0;
 }
 
 .aboutme-section #figura1 {
@@ -486,6 +487,15 @@ main .text {
 }
 
 .projects .projects-container #rentaride {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.projects .projects-container #weappther {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
@@ -810,7 +820,6 @@ input, textarea {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    padding: 50px;
     padding-top: 130px;
     background-color: #fbfbf8;
     top: -80px;
@@ -826,7 +835,8 @@ input, textarea {
   header .navbar .navbar-logo {
     padding: 15px;
     border-bottom: 1px solid #ccc;
-    width: 75%;
+    width: 80%;
+    margin: 0 auto;
   }
   header .navbar .navbar-logo a {
     font-size: 30px;
@@ -843,9 +853,10 @@ input, textarea {
             flex-direction: column;
   }
   header .navbar .navbar-ul ul li {
+    width: 80%;
+    margin: 0 auto;
     padding: 15px;
     border-bottom: 1px solid #ccc;
-    width: 75%;
   }
   header .navbar .navbar-ul ul li a {
     padding: 0;
@@ -913,7 +924,6 @@ input, textarea {
     margin-top: 30px;
   }
   .aboutme-section {
-    height: 900px;
     margin: 100px 0;
   }
   .aboutme-section #figura1 {
@@ -1061,9 +1071,6 @@ input, textarea {
   .contact-section form .contact-button {
     margin-bottom: 10px;
   }
-  .aboutme-section {
-    height: 950px;
-  }
   .aboutme-section .aboutme-box .aboutme-experience .experience-cards {
     width: 100%;
   }
@@ -1120,9 +1127,6 @@ input, textarea {
   .contact-section form .contact-button {
     margin-bottom: 10px;
   }
-  .aboutme-section {
-    height: 950px;
-  }
   footer .footer-container {
     width: 100%;
   }
@@ -1137,7 +1141,6 @@ input, textarea {
     top: 85%;
   }
   .aboutme-section {
-    height: 1000px;
     margin: 100px 0;
   }
   .aboutme-section .aboutme-box {
@@ -1166,37 +1169,31 @@ input, textarea {
 }
 
 @media (max-height: 650px) {
-  .aboutme-section .aboutme-box {
-    height: 70%;
+  .aboutme-section {
+    height: auto;
   }
   .aboutme-section #figura1 {
     -webkit-transform: scale(0.2);
             transform: scale(0.2);
   }
+  .aboutme-section .aboutme-box {
+    height: auto;
+  }
 }
 
 @media (max-height: 600px) {
-  .aboutme-section {
-    height: 110vh;
-  }
   .aboutme-section .aboutme-box {
     height: auto;
   }
 }
 
 @media (max-height: 550px) {
-  .aboutme-section {
-    height: 140vh;
-  }
   .aboutme-section .aboutme-box {
     height: auto;
   }
 }
 
 @media (max-height: 480px) {
-  .aboutme-section {
-    height: 160vh;
-  }
   .aboutme-section .aboutme-box {
     height: auto;
   }
