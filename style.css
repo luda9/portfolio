@@ -721,6 +721,66 @@ input, textarea {
   background-color: #fbfbf8;
 }
 
+@media (min-width: 1260px) {
+  .aboutme-section #figura1 {
+    position: absolute;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    bottom: -800px;
+    right: -900px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .aboutme-section #figura1 {
+    position: absolute;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    bottom: -950px;
+    right: -900px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .aboutme-section #figura1 {
+    position: absolute;
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    bottom: -1000px;
+    right: -900px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .aboutme-section #figura1 {
+    position: absolute;
+    -webkit-transform: scale(0.15);
+            transform: scale(0.15);
+    bottom: -1100px;
+    right: -900px;
+  }
+}
+
+@media (min-width: 2100px) {
+  .aboutme-section #figura1 {
+    position: absolute;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    bottom: -1300px;
+    right: -900px;
+  }
+}
+
+@media (min-width: 2600px) {
+  .aboutme-section #figura1 {
+    position: absolute;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    bottom: -1600px;
+    right: -900px;
+  }
+}
+
 @media (max-width: 1130px) {
   .aboutme-section #figura1 {
     -webkit-transform: scale(0.3);
