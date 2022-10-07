@@ -381,6 +381,19 @@ main{
         }
       }
     }
+    #smallprojects{
+      grid-row: 3 / 4;
+      grid-column: 1 / 2;
+      background-color: #fbfbf8;
+      border: 2px solid $black-color;
+      h3, p{
+        color: $black-color;
+      }
+      .project-img{
+        border: 2px solid $black-color;
+        border-radius: 10px;
+      }
+    }
   }
 }
 
